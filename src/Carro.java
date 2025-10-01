@@ -24,15 +24,15 @@ public class Carro {
 //Pessoa proprietario = new Pessoa(); sempre instanciar o objeto na classe de declaração é errado.
 
     //Iniciar os comportamentos do objeto = métodos.
-    void calcularValorRevenda() {
+    //Assinatura do método (Retorno, nome e parametros).
+    double calcularValorRevenda() {
          int tempoUsoAnos = 2025 - anoFabricacao;
          int vidaUtilAnos = 20;
          double valorRevenda = (valor / vidaUtilAnos) * (vidaUtilAnos - tempoUsoAnos);
 
          if (valorRevenda < 0) {
-             valorRevenda = 0;
+             valorRevenda = valor;
          }
-         System.out.println("Tempo de uso: " + tempoUsoAnos);
-         System.out.println("Valor da revenda: " + valorRevenda);
+         return valorRevenda;
     }
 }
