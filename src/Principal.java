@@ -9,7 +9,7 @@ public class Principal {
         meuCarro.fabricante = "Honda";
         meuCarro.modelo = "Civic";
         meuCarro.cor = "Branco";
-        meuCarro.anoFabricacao = 2024;
+        meuCarro.anoFabricacao = 2017;
         meuCarro.valor = 120000.00;
         //Aqui gera uma exceção nullPointerException, Resolvido: Instanciando uma pessoa, tem que existir a pessoa.
         meuCarro.proprietario = new Pessoa();
@@ -27,20 +27,22 @@ public class Principal {
 
         //Isso é uma pilha de métodos, o main chama o calcularValorRevenda.
         meuCarro.calcularValorRevenda();
+        meuCarro.imprimirResumoDepreciacao();
         //Estou usando o valor que o método retorna.
-        System.out.println(meuCarro.calcularValorRevenda());
+
 
         //É um objeto diferente do de cima, cada objeto é único, faz referência ao um objeto diferente na memória.
         Carro seuCarro = new Carro();
         seuCarro.fabricante = "Toyota";
         seuCarro.modelo = "Corolla";
         seuCarro.cor = "Branco";
+        seuCarro.valor = 150000.00;
         seuCarro.anoFabricacao = 2025;
         seuCarro.proprietario = new Pessoa();
         seuCarro.proprietario.nome = "Alex";
         seuCarro.proprietario.cpf = "123.456.789-00";
         seuCarro.proprietario.anoNascimento = 1984;
-        seuCarro.calcularValorRevenda(); //chamada do método calcularValorRevenda.
+        seuCarro.imprimirResumoDepreciacao();//chamada do método calcularValorRevenda.
 
         /* Variável: meuCarro, seuCarro e julio, ela não representa o objeto e sim faz referência ao objeto,
         * então ela não armazena valor.

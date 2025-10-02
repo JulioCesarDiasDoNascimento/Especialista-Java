@@ -21,18 +21,36 @@ public class Carro {
     int anoFabricacao;
     //Composição de objetos, é a relação tem UM.
     Pessoa proprietario;
-//Pessoa proprietario = new Pessoa(); sempre instanciar o objeto na classe de declaração é errado.
+//Pessoa proprietário = new Pessoa(); sempre instanciar o objeto na classe de declaração é errado.
 
     //Iniciar os comportamentos do objeto = métodos.
-    //Assinatura do método (Retorno, nome e parametros).
+    //Assinatura do método (Retorno, nome e parâmetros).
+
+    int calcularTempoUsoEmAnos() {
+        return 2025 - anoFabricacao;
+    }
     double calcularValorRevenda() {
-         int tempoUsoAnos = 2025 - anoFabricacao;
          int vidaUtilAnos = 20;
-         double valorRevenda = (valor / vidaUtilAnos) * (vidaUtilAnos - tempoUsoAnos);
+         double valorRevenda = (valor / vidaUtilAnos) * (vidaUtilAnos - calcularTempoUsoEmAnos());
 
          if (valorRevenda < 0) {
              valorRevenda = valor;
          }
-         return valorRevenda;
+         return valorRevenda; // o return é o ultimo ponto de parada do método.
     }
+
+    void imprimirResumoDepreciacao() {
+        System.out.println("O carro " + fabricante + " " + modelo + " foi depreciado em " + calcularTempoUsoEmAnos()
+                + " anos " + "" + "valor atual é: " + calcularValorRevenda() +" o valor do ipva anual é: " + calcularIpva());
+    }
+
+    double calcularIpva() {
+        if (anoFabricacao < 2015){
+            return 0.0;
+        }
+        return calcularValorRevenda() * 0.05;
+    }
+
+
+
 }
