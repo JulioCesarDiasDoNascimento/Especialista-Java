@@ -40,6 +40,10 @@ public class Carro {
     }
 
     void imprimirResumoDepreciacao() {
+        if (calcularValorRevenda() < 20000) {
+            System.out.println("O carro é muito barato");
+            return; //Esse return sai do método.
+        }
         System.out.println("O carro " + fabricante + " " + modelo + " foi depreciado em " + calcularTempoUsoEmAnos()
                 + " anos " + "" + "valor atual é: " + calcularValorRevenda() +" o valor do ipva anual é: " + calcularIpva());
     }
@@ -50,7 +54,4 @@ public class Carro {
         }
         return calcularValorRevenda() * 0.05;
     }
-
-
-
 }

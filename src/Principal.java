@@ -10,7 +10,7 @@ public class Principal {
         meuCarro.modelo = "Civic";
         meuCarro.cor = "Branco";
         meuCarro.anoFabricacao = 2017;
-        meuCarro.valor = 120000.00;
+        meuCarro.valor = 20000.00;
         //Aqui gera uma exceção nullPointerException, Resolvido: Instanciando uma pessoa, tem que existir a pessoa.
         meuCarro.proprietario = new Pessoa();
         meuCarro.proprietario.nome = "Julio";
