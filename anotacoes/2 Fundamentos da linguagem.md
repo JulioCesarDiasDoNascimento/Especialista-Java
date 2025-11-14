@@ -11,6 +11,9 @@
 
 * Nome da classe deve comecar com letra maiuscula.
 * Nome dos metodos deve comecar com letra minuscula.
+* Nome das variaveis deve comecar com letra minuscula.
+* Uma variavel de ser declarado por linha
+* O padrão de nome de método e variavel é lowerCamelCase.
 
 ### Palavras reservadas:
 ![palavras resevadas.png](/img/palavras%20resevadas.png)
@@ -18,4 +21,35 @@
 * Ser usada errada gera erro de compilação.
 
 ### Variaveis:
+> Tipo nomeVariavel = valor;
+
+* Tipo nome = valor (Declaração) o valor já pode ser passado aqui;
+* nome = valor (Atribuição, para atribuir precisa existir uma declaração)
+
+### Operadores aritmeticos:
+* Adição + 
+* Subtração -
+* Multiplicação *
+* Divisão /
+* Resto da divisão %
+* Incremento ++
+* Decremento --
+
+> Abreviando os operadores:
+> * (Abreviação é +=, -=, *=, /=, %=)
+> * Exemplo: 
+> * * x += 2; 
+> * * (equivale a x = x + 2;)
+
+### Incremento e Decremento(Sempre é uma unica unidade):
+> No lugar de usar x += 1;
+> * podemos usar x++;
+
+
+### Tipos primitivos:
+![img.png](/img/tipos_primitivos.png)
+
+number: int, float, double, long, byte, short
+boolean: true, false
+char: 'a', 'b', 'c'
 
