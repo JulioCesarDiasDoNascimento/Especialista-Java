@@ -47,9 +47,25 @@
 
 
 ### Tipos primitivos:
-![img.png](/img/tipos_primitivos.png)
+![img](/img/tipos_primitivos.png)
 
 number: int, float, double, long, byte, short
 boolean: true, false
 char: 'a', 'b', 'c'
 
+
+### Conversão de tipos:(casting)
+* Explicito:> long x = 10;
+> int y = (int) x;
+
+* Implicito:
+> int x = 10;
+> long y = x;
+> ![img](/img/casting.png)
+
+## Promoção aritmética
+* Sempre vai ser exigido o resultado ao tipo maior!
+* Exemplo: 
+> int x = 10;
+> long z = 5;
+> long y = x * z; (MODO CERTO)
