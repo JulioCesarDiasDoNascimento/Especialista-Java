@@ -69,3 +69,20 @@ char: 'a', 'b', 'c'
 > int x = 10;
 > long z = 5;
 > long y = x * z; (MODO CERTO)
+
+## Trabalhando com String
+* Fica em formato de texto. Dentro de aspas duplas("Olá Mundo")
+* String é uma classe!
+
+#### Escape
+> Regra:
+> * Utiliza a contra-barra (\)
+> * Exemplo: \n (quebra de linha)
+>   * Erro: System.out.println("Olá "Mundo""); 
+>   * Certo: System.out.println("Olá \"Mundo\"");
+
+## Recebendo dados do Usuario:(Classe Scanner)
+> Scanner sc = new Scanner(System.in);(PARA TERMINAL))
+> * nextInt
+> * nextDouble
+> * nextLine mais usados

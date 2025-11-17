@@ -1,10 +1,13 @@
+import java.util.Scanner;
+
 public class Master {
 
     public static void main(String[] args) {
 
-       int x = 3;
-       float y = 2;
-       float z = x / y;
-        System.out.println(z);
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite seu nome:");
+        String nome = entrada.nextLine();
+        System.out.println("Olá " + nome);
+
     }
 }
