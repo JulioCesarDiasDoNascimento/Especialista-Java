@@ -1,6 +1,5 @@
 package desafios;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class III_IV {
