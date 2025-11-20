@@ -1,21 +1,25 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Master {
 
     public static void main(String[] args) {
-        // Exame cortisol
         Scanner entrada = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
 
-        System.out.println("Digite seu cortisol: ");
-        double cortisol = entrada.nextDouble();
-        // Cortisol ideal é 6 a 18.4
-        boolean cortisolIdeal = cortisol >= 6 && cortisol <= 18.4;
+        System.out.println("Digite seu peso: ");
+        int peso = entrada.nextInt();
 
-        if (cortisolIdeal) {
-            System.out.printf("O cortisol %f está  dentro do ideal!", cortisol);
-        } else {
-            System.out.printf("O cortisol %f está fora do ideal!", cortisol);
+        System.out.println("Digite sua altura: ");
+        double altura = entrada.nextDouble();
+
+        double imc = peso / (altura * altura);
+        System.out.printf("IMC: %f",imc);
+
+        boolean abaixoPesoIdeal = imc < 18.5;
+
+        if (abaixoPesoIdeal) {
+            System.out.println("Abaixo do peso ideal.");
         }
-
     }
 }
