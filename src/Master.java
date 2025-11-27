@@ -1,25 +1,32 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Master {
 
     public static void main(String[] args) {
+
         Scanner entrada = new Scanner(System.in);
-        Locale.setDefault(Locale.US);
 
-        System.out.println("Digite seu peso: ");
-        int peso = entrada.nextInt();
+        System.out.println("Digite a avalição do funcionario: ");
+        int nota = entrada.nextInt(); // vai de 1 a 5
+        String descricaoNota = null;
 
-        System.out.println("Digite sua altura: ");
-        double altura = entrada.nextDouble();
-
-        double imc = peso / (altura * altura);
-        System.out.printf("IMC: %f",imc);
-
-        boolean abaixoPesoIdeal = imc < 18.5;
-
-        if (abaixoPesoIdeal) {
-            System.out.println("Abaixo do peso ideal.");
+        switch (nota) {
+            case 1:
+                descricaoNota = "Muito Ruim";
+                break;
+            case 2:
+                descricaoNota = "Ruim";
+                break;
+            case 3:
+                descricaoNota = "Regular";
+                break;
+            case 4:
+                descricaoNota = "Bom";
+                break;
+            case 5:
+                descricaoNota = "Excelente";
+                break;
         }
+        System.out.printf("A avaliação do funcionario foi: %s%n",descricaoNota);
     }
 }

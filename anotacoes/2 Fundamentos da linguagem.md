@@ -16,7 +16,7 @@
 * O padrão de nome de método e variavel é lowerCamelCase.
 
 ### Palavras reservadas:
-![palavras resevadas.png](/img/palavras%20resevadas.png)
+![img](/img/palavras_resevadas.png)
 * Não pode ser usado como nome de variavel ou de metodo.
 * Ser usada errada gera erro de compilação.
 
@@ -86,3 +86,11 @@ char: 'a', 'b', 'c'
 > * nextInt
 > * nextDouble
 > * nextLine mais usados
+
+# Trabalhando com printf
+> System.out.printf("Texto %s numero %d", texto, numero);
+* %s para string
+* %d para inteiros
+* %f para numeros de ponto flutuante
+* %.2f para limitar o numero de casas decimais
+* %n para pular linha
