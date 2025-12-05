@@ -9,7 +9,7 @@ public class II_XVIII {
         int idade2 = 40;
         int idade3 = 60;
 
-        float idadeMedia = (idade1 + idade2 + idade3) / 3;
-        System.out.println("Idade Media: " + idadeMedia);
+        float idadeMedia = (float) (idade1 + idade2 + idade3) / 3;
+        System.out.printf("Idade Media: %f%n ", idadeMedia);
     }
 }
