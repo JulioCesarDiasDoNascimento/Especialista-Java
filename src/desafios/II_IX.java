@@ -8,6 +8,6 @@ public class II_IX {
         int vendaTRES = 100;
 
         int vendaTOTAL = (vendaUM + vendaDOIS + vendaTRES)/3;
-        System.out.println("Venda Total: " + vendaTOTAL);
+        System.out.printf("Venda Total: %d%n", vendaTOTAL);
     }
 }
