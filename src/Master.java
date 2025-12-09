@@ -1,32 +1,24 @@
-import java.util.Scanner;
-
 public class Master {
 
     public static void main(String[] args) {
 
-        Scanner entrada = new Scanner(System.in);
+        char tipoNotaFiscal = 'p'; // p - produto, s - serviço
+        double totalFaturado = 1200.30;
 
-        System.out.println("Digite a avalição do funcionario: ");
-        int nota = entrada.nextInt(); // vai de 1 a 5
-        String descricaoNota = null;
 
-        switch (nota) {
-            case 1:
-                descricaoNota = "Muito Ruim";
-                break;
-            case 2:
-                descricaoNota = "Ruim";
-                break;
-            case 3:
-                descricaoNota = "Regular";
-                break;
-            case 4:
-                descricaoNota = "Bom";
-                break;
-            case 5:
-                descricaoNota = "Excelente";
-                break;
+        double valorImpostos;
+
+        // COM OPERADOR TERNARIO
+        // valorImpostos =  tipoNotaFiscal == 's' ? totalFaturado * 0.16 : totalFaturado * 0.35;
+
+        if (tipoNotaFiscal == 's') {
+            valorImpostos = totalFaturado * 0.16;
+        } else {
+            valorImpostos = totalFaturado * 0.35;
         }
-        System.out.printf("A avaliação do funcionario foi: %s%n",descricaoNota);
+
+        System.out.printf("Total faturado: R$ %.2f%n", totalFaturado);
+        System.out.printf("Valor do impostos: R$ %.2f%n", valorImpostos);
+        System.out.printf("Tipo da nota fiscal é %s%n", tipoNotaFiscal);
     }
 }
