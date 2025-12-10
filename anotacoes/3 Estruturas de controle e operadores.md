@@ -9,13 +9,13 @@
 > * "< menor que"
 > * ">= maior ou igual a"
 > * "<= menor ou igual a"
-
 > Operadores 
 > * Curto-circuito (é validado apenas o primeiro valor exemplo: 10 > 5 && 10 > 1 sé o 10 > 5 for falso ele não avalia o resto)
 > * Precendência: o && é avaliado antes do || usar bem os parenteses()
 > * && e 
 > * || ou
 > * ! NOT (diferente)
+---
 
 ## Estrutura condicional if
 
@@ -26,6 +26,7 @@
 
 > Escopos e inicialização
 > * Se a variavel for declarada dentro de algum bloco ela só existe nele;
+---
 
 ## Estrutura de controle switch
 
@@ -37,7 +38,7 @@
 > * default é usado quando nenhum case for verdadeiro
 
 ![img](img/switch.png)
-
+---
 
 > Switch Expressions
 > * Java 14(17)
@@ -45,3 +46,24 @@
 > * expression = a logica do switch é atribuida a uma variavel
 > * depois da -> é apenas o valor que vai ser atribuido a variavel
 > * é obrigatorio ter o default
+---
+
+> Operador ternário
+> CONDIÇÃO? VERDADEIRO EXECULTA: FALSO EXECULTA
+---
+
+### Estrutura de repetição
+* for - para
+* for (iniciação; condição; incremento ou decremento)
+* for( int i = 1; i <= 10; i++)
+
+> Loop Infinito kkkkk 
+> for (;;) { System.out.print("0101") };
+
+
+* Codigo de exemplo muito bom
+* ![pesso de aeronave vs passageiro](img.png)
+
+* while - enquanto
+* while (Condição booleana){execulta}
+* A ideia é usar quando não sabe a quantidade de execuções
