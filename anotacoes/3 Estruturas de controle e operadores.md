@@ -62,7 +62,7 @@
 
 
 * Codigo de exemplo muito bom
-* ![pesso de aeronave vs passageiro](img.png)
+* ![pesso de aeronave vs passageiro](../img/codigoexrepeticao.png)
 
 * while - enquanto
 * while (Condição booleana){execulta}
