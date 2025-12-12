@@ -1,4 +1,4 @@
-package V;
+package v;
 
 public class Main {
     public static void main(String[] args) {
