@@ -6,10 +6,12 @@ public class Carro {
     String modelo;
     String cor;
     int anoFabricacao;
+    Pessoa proprietario;
 
     @Override
     public String toString() {
         return "A fabrica do carro é: " + fabricante + " do modelo: " + modelo + " da cor: " + cor
-                + " é do ano de fabricacao: " + anoFabricacao;
+                + " é do ano de fabricacao: " + anoFabricacao + " e o dono é " + proprietario.nome + " com cpf: "
+                + proprietario.cpf + " nascendo em: " + proprietario.anoNascimento;
     }
 }

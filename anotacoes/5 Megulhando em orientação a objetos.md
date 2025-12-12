@@ -13,3 +13,6 @@
 
 ### Os atributos declarados na classe, também é chamado membros das classes
 ![membros das classes](../img/membrosdaclasse.png)
+---
+#### Composição de objetos
+* Um objeto composto pelo outro(isso é muito usado)
