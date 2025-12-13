@@ -15,19 +15,21 @@ public class Main {
         gi.anoNascimento = 2006;
 
         meuCarro.fabricante = "bmw";
-        meuCarro.modelo = "x6";
+        meuCarro.modelo = "X6";
         meuCarro.cor = "branca";
         meuCarro.anoFabricacao = 2025;
         meuCarro.proprietario = eu;
 
         Carro seuCarro  = new Carro();
         seuCarro.fabricante = "audi";
-        seuCarro.modelo = "a8";
+        seuCarro.modelo = "A8";
         seuCarro.cor = "preto";
         seuCarro.anoFabricacao = 2025;
         seuCarro.proprietario = gi;
 
         System.out.println(meuCarro.toString());
+        meuCarro.calcularValorRevenda();
         System.out.println(seuCarro.toString());
+        seuCarro.calcularValorRevenda();
     }
 }

@@ -16,3 +16,26 @@
 ---
 #### Composição de objetos
 * Um objeto composto pelo outro(isso é muito usado)
+
+### Valores Padrões
+
+> Tipos primitivos 
+> * int = 0
+> * char = ''
+> * double = 0
+> * boolean = false
+
+> Classes = null
+>----
+
+
+### MUITO IMPORTANTE!
+#### A variavel ela não é um objeto, ela apenas faz referência a um!
+![referencia ao objeto pessoa](../img/referencia_objeto.png)
+* Variável referência ao objeto é um apontamento ao objeto 
+
+ **SUPER ENTENDIDO AGORA**
+----
+
+> Métodos
+> * para nomes de métodos sempre utilizar um verbo no infinitivo!

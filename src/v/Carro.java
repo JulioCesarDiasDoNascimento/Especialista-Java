@@ -8,6 +8,10 @@ public class Carro {
     int anoFabricacao;
     Pessoa proprietario;
 
+    void calcularValorRevenda() {
+        System.out.printf("Calcular valor de revenda do carro de: %s %d%n", modelo, anoFabricacao);
+    }
+
     @Override
     public String toString() {
         return "A fabrica do carro é: " + fabricante + " do modelo: " + modelo + " da cor: " + cor
