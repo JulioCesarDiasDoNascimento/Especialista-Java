@@ -1,4 +1,4 @@
-package v;
+package legado.v_01_19;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,18 +18,21 @@ public class Main {
         meuCarro.modelo = "X6";
         meuCarro.cor = "branca";
         meuCarro.anoFabricacao = 2025;
+        meuCarro.precoCompra = 650000.00;
         meuCarro.proprietario = eu;
 
         Carro seuCarro  = new Carro();
         seuCarro.fabricante = "audi";
         seuCarro.modelo = "A8";
         seuCarro.cor = "preto";
-        seuCarro.anoFabricacao = 2025;
+        seuCarro.anoFabricacao = 2022;
+        seuCarro.precoCompra = 4500000.00;
         seuCarro.proprietario = gi;
 
         System.out.println(meuCarro.toString());
-        meuCarro.calcularValorRevenda();
+        meuCarro.imprimirResumoDeprecicao();
+        System.out.println("-------------------------------------");
         System.out.println(seuCarro.toString());
-        seuCarro.calcularValorRevenda();
+        seuCarro.imprimirResumoDeprecicao();
     }
 }

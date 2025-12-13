@@ -39,3 +39,6 @@
 
 > Métodos
 > * para nomes de métodos sempre utilizar um verbo no infinitivo!
+> * **assinatura do metodo é onde ele é declarado! TIPO NOME() {**
+> * a variável alocada no parâmetro so existe dentro do bloco!
+> * quando informamos que o método tem parâmetros é obrigatório implementar eles!
