@@ -2,12 +2,16 @@ package v;
 
 public class Principal {
     public static void main(String[] args) {
-        double precoCompraFornecedor = 140;
+        Produto soja = new Produto();
+        Produto.custoEmbalagem = 10;
+        soja.precoCusto = 250; // por enquanto não está a ser usado!
+        soja.alterarPrecoCusto(100);
+
 
         ServicoDePrecificacao servicoDePrecificacao = new ServicoDePrecificacao();
-        servicoDePrecificacao.calcularPrecoVenda(precoCompraFornecedor);
+        servicoDePrecificacao.definirPrecoVenda(soja, 20);
 
-        System.out.printf("Preço: %.2f%n", precoCompraFornecedor);
+        System.out.printf("Preço de veda: %.2f%n", soja.precoVenda);
 
     }
 }

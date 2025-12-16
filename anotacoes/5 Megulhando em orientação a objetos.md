@@ -43,3 +43,13 @@
 > * a variável alocada no parâmetro so existe dentro do bloco!
 > * quando informamos que o método tem parâmetros é obrigatório implementar eles!
 > * evitar alterar valor de variável recebida pelo parâmetro aula 05.28
+
+
+### this
+* informa que o atributo é da classe.
+
+> **static**
+> * informa que a variável não é da instância e sim da classe.
+> * global, todas as "instancias recebem o mesmo valor"
+> * não gostei muito de usar!
+> * não faz parte do objeto e sim da classe

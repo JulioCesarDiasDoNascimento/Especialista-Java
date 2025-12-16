@@ -1,9 +1,12 @@
 package v;
 
 public class ServicoDePrecificacao {
-    // Esse codigo está errado, pois ele não altera o valor do parâmetro
-    void calcularPrecoVenda(double precoCusto){
-        // Adiciona 20% da margem
-        precoCusto = precoCusto * 1.20;
+
+    void definirPrecoVenda(Produto produto, double percentualMargemLucro) {
+        double precoVendaCalculado = produto.precoCusto * ((percentualMargemLucro / 100) + 1);
+       precoVendaCalculado += Produto.custoEmbalagem;
+       produto.precoVenda = precoVendaCalculado;
+
     }
+
 }
