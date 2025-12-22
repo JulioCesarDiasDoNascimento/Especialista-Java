@@ -9,6 +9,10 @@ public class Produto {
         this.precoCusto =  precoCusto;
     }
 
+    void alterarCustoEmbalagem(double custoEmbalagem){
+        Produto.custoEmbalagem = custoEmbalagem;
+    }
+
     void imprimirCustoEmbalagem(){
         System.out.printf("Custo com embalagem: %.2f%n", custoEmbalagem);
     }
