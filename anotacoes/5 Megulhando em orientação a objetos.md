@@ -34,7 +34,7 @@
 ![referencia ao objeto pessoa](../img/referencia_objeto.png)
 * Variável referência ao objeto é um apontamento ao objeto 
 
- **SUPER ENTENDIDO AGORA**
+ **SUPERENTENDIDO AGORA**
 ----
 
 > Métodos
@@ -65,3 +65,9 @@
 > * this não pode ser usado em métodos staticos
 > * se por acaso eu precisar receber um atributo estático num método statico devo passalo como parametro
 o objeto e utilizar no codigo
+
+
+> * static final int maiorIdade = 18; // isso é uma constante!
+> * OBSERVAÇÃO ESSE VALOR NÃO SE ALTERA.
+> * padão para declarar constantes seria assim
+    **static final int MAIOR_IDADE = 18;**

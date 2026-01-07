@@ -1,4 +1,4 @@
-package v;
+package legado.v_28_35;
 
 public class Produto {
     static double custoEmbalagem; // Elá pertence a classe produto!

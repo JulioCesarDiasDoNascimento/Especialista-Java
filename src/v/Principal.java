@@ -1,23 +1,23 @@
 package v;
 
 public class Principal {
-    public static void main(String[] args) {
-        Produto soja = new Produto();
-        soja.precoCusto = 250; // por enquanto não está a ser usado!
-        soja.alterarPrecoCusto(100);
-        Produto.alterarCustoEmbalagem(10);
 
-        Produto carne = new Produto();
-        carne.alterarPrecoCusto(100);
+    // a ideia é para um hospital kk
+    static void main() {
 
-        System.out.printf("Total de custos da carne: %.2f%n", Produto.calcularCustosTotais(carne));
+        Visitante novoVisitante = new Visitante();
+        novoVisitante.nome = "Júlio";
+        novoVisitante.idade = 12;
+
+        CadastroPortaria novoCadastro = new CadastroPortaria();
+        novoCadastro.cadastar(novoVisitante, 2);
 
 
-        ServicoDePrecificacao servicoDePrecificacao = new ServicoDePrecificacao();
-        servicoDePrecificacao.definirPrecoVenda(soja, 20);
-        Produto.imprimirCustoEmbalagem();
-
-        System.out.printf("Preço de veda: %.2f%n", soja.precoVenda);
+        if (novoVisitante.possuiAcessoRegistroPorIdade()){
+            System.out.printf("Acesso não permite para menores de %d anos", Visitante.MAIOR_IDADE);
+        } else {
+            System.out.println("Acesso liberado para: " + novoVisitante.nome);
+        }
 
     }
 }
