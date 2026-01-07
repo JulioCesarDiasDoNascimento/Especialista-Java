@@ -57,3 +57,11 @@
 > * de instância vs da classe(static)
 > * de instância só pode ser acesado quando instanciamos o objeto = new Objeto.
 > * Da classe acessamos quando chamamos a classe Obejeto.membro
+
+
+* chegou um ponto importante, atributos e métodos staticos devem ser esuado em classes utils | helper
+* deve se evitar criar métodos staticos, pois não é tão orientado a objetos
+
+> * this não pode ser usado em métodos staticos
+> * se por acaso eu precisar receber um atributo estático num método statico devo passalo como parametro
+o objeto e utilizar no codigo

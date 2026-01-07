@@ -5,15 +5,19 @@ public class Produto {
     double precoCusto;
     double precoVenda;
 
+    static double calcularCustosTotais(Produto produto){
+        return produto.precoCusto + Produto.custoEmbalagem;
+    }
+
     void alterarPrecoCusto(double precoCusto){
         this.precoCusto =  precoCusto;
     }
 
-    void alterarCustoEmbalagem(double custoEmbalagem){
+    static void alterarCustoEmbalagem(double custoEmbalagem){
         Produto.custoEmbalagem = custoEmbalagem;
     }
 
-    void imprimirCustoEmbalagem(){
+    static void imprimirCustoEmbalagem(){
         System.out.printf("Custo com embalagem: %.2f%n", custoEmbalagem);
     }
 }
