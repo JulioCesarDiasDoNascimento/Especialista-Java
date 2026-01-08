@@ -55,19 +55,31 @@
 > * não faz parte do objeto e sim da classe
 > * método de instância não é par alterar o valor de uma variável estática 
 > * de instância vs da classe(static)
-> * de instância só pode ser acesado quando instanciamos o objeto = new Objeto.
+> * de instância só pode ser acessado quando instanciamos o objeto = new Objeto.
 > * Da classe acessamos quando chamamos a classe Obejeto.membro
 
 
-* chegou um ponto importante, atributos e métodos staticos devem ser esuado em classes utils | helper
-* deve se evitar criar métodos staticos, pois não é tão orientado a objetos
+* Chegou um ponto importante, atributos e métodos staticos devem ser usado em classes utils | helper
+* Deve se evitar criar métodos staticos, pois não é tão orientado a objetos
 
 > * this não pode ser usado em métodos staticos
-> * se por acaso eu precisar receber um atributo estático num método statico devo passalo como parametro
-o objeto e utilizar no codigo
+> * se por acaso eu precisar receber um atributo estático num método statico devo passa lo como parâmetro
+o objeto e utilizar no código
 
 
 > * static final int maiorIdade = 18; // isso é uma constante!
 > * OBSERVAÇÃO ESSE VALOR NÃO SE ALTERA.
 > * padão para declarar constantes seria assim
     **static final int MAIOR_IDADE = 18;**
+---
+
+### Sobrecarga de métodos
+* para utilizar sobrecarga precisa ter o mesmo nome o método
+* os parâmetros têm que ser diferente
+
+> **Inferência** = deduzir
+> * o compilador se vira
+> * var = no lugar do tipo 
+> * OBS. EU JÚLIO CÉSAR NÃO GOSTO MUITO DE USAR, PREFIRO TUDO SER TIPADO
+> * não funciona em variavel de instância, apenas em variavel local(dentro de algum método)
+> * não é muito usado no mercado de java
