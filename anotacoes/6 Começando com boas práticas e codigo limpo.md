@@ -6,6 +6,7 @@
 > * sempre ser bem descritivo com o nome 
 > * para classes sempre ser um substantivo e usar coesão
 > * refatore! se tiver a oportunidade
+---
 
 ### Organização
 
@@ -15,10 +16,17 @@
 > * OBS - É BOM TER UM ESPAÇO 
 > * 2° de instância 
 > * 3º métodos
+---
 
 
 ### Comentários
 * evitar muitos comentários
 * ser coeso
-* evitar redundancia
+* evitar redundância
 * não comentar sobre sixtaxe e sim sobre regra de negócio
+* o código deve ser uma redação kk
+
+> Métodos 
+> * métodos devem ser pequenos media (10 a 20 linhas) - o ótimo método seria de 1 linha
+> * devem fazer uma unica coisa
+> * devem ter poucos argumentos(parâmetros)
