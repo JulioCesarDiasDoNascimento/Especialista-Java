@@ -1,4 +1,4 @@
-package vi;
+package legado.vi;
 
 public class Cliente {
     double calcularLimiteCredito() {

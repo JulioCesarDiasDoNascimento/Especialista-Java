@@ -1,4 +1,4 @@
-package vi;
+package legado.vi;
 
 public class CadastrosGerais {
     // PROBLEMA DESSA CLASSE ELA É MUITO GENERICA = MUITA RESPONSABILIDADE

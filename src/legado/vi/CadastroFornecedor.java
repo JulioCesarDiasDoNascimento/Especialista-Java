@@ -1,4 +1,4 @@
-package vi;
+package legado.vi;
 
 public class CadastroFornecedor {
     Fornecedor cadastrarFornecedor(Fornecedor fornecedor){
