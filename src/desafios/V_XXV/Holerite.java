@@ -11,9 +11,9 @@ public class Holerite {
     }
 
     void imprimirResumoHolerite() {
-        System.out.printf("A holerite do funcionario %s desse mês, valor total de horas %.2f , valor total de extra %.2f"
-                        + " e valor pago aos filhos %.2f", funcionario.nome, valorTotalDasHorasNormais,
-                valorTotalDasHorasExtras, valorAdicionaisParaFilhos);
+        System.out.printf("A holerite do funcionario %s desse mês, valor total de horas %.2f," +
+                " valor total de extra %.2f" + " e valor pago aos filhos %.2f",
+                funcionario.nome, valorTotalDasHorasNormais, valorTotalDasHorasExtras, valorAdicionaisParaFilhos);
     }
 
 }

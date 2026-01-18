@@ -1,4 +1,4 @@
-package vii;
+package legado.vii_01;
 
 public class Cliente {
 
