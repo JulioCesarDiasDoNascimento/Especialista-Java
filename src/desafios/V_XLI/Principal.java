@@ -1,10 +1,10 @@
-package desafios.XLI;
+package desafios.V_XLI;
 
 public class Principal {
     static void main() {
 
         NumeroUtil numeroUtil = new NumeroUtil();
-        var resultadoPrimeiroMetodo = numeroUtil.maiorNumero(1,2);
+        var resultadoPrimeiroMetodo = numeroUtil.maiorNumero(0,0);
         System.out.println("O resultado do primeiro método é: " + resultadoPrimeiroMetodo);
 
         var resultadoSegundoMetodo = numeroUtil.maiorNumero(1,2,3);

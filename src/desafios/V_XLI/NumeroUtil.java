@@ -1,4 +1,4 @@
-package desafios.XLI;
+package desafios.V_XLI;
 
 public class NumeroUtil {
 
@@ -6,9 +6,11 @@ public class NumeroUtil {
     int maiorNumero(int numeroUM, int numeroDOIS){
         if (numeroUM > numeroDOIS){
             return numeroUM;
-        }else {
+        }else if (numeroUM < numeroDOIS) {
             return numeroDOIS;
         }
+        System.out.printf("O valor inserido é menor que o numero padrão: %d%n", NUMERO_PADRAO);
+        return NUMERO_PADRAO;
     }
 
     int maiorNumero(int numeroUM, int numeroDOIS, int numeroTRES){
@@ -19,6 +21,7 @@ public class NumeroUtil {
         } else if (numeroTRES > numeroUM && numeroTRES > numeroDOIS) {
             return numeroTRES;
         }
+        System.out.printf("O valor inserido é menor que o numero padrão: %d%n", NUMERO_PADRAO);
         return NUMERO_PADRAO;
     }
 
@@ -37,6 +40,7 @@ public class NumeroUtil {
         } else if (numeroTRES > numeroUM && numeroTRES > numeroDOIS) {
             return (int) numeroTRES;
         }
+        System.out.printf("O valor inserido é menor que o numero padrão: %d%n", NUMERO_PADRAO);
         return NUMERO_PADRAO;
     }
 
