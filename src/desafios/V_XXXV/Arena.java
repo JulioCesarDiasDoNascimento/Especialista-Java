@@ -5,8 +5,8 @@ public class Arena {
       double resultadoQuadrado = GeometriaUtil.perimetroQuadrado(100);
       double resultadoRedondo = GeometriaUtil.perimetroCirculo(100);
 
-        System.out.println("Perimetro Quadrado: " + resultadoQuadrado);
-        System.out.println("Perimetro Circulo: " + resultadoRedondo);
+        System.out.println("Perímetro Quadrado: " + resultadoQuadrado);
+        System.out.println("Perímetro Circulo: " + resultadoRedondo);
 
     }
 }
