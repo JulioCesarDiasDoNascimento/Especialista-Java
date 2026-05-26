@@ -37,7 +37,7 @@ public class IX {
             }
         }
 
-        // condição para IMC em homens
+        // condição para IMC em mulheres
         if (sexo == 'f'){
             // Abaixo do peso
             if (imcFeminino < 19.1){
