@@ -1,6 +1,6 @@
-package desafios;
+package desafios.II;
 
-public class II_IX {
+public class IX {
     public static void main(String[] args) {
         int vendaJoao = 20;
         int vendaGiovanna = 30;

@@ -1,8 +1,8 @@
-package desafios;
+package desafios.II;
 
 import java.util.Scanner;
 
-public class II_XXIII {
+public class XXIII {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
